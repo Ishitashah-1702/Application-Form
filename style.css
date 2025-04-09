@@ -1,0 +1,56 @@
+
+#head {
+    text-align: center;
+    margin-top: 30px; /* Optional: adds spacing from the top */
+    margin-bottom: 30px;
+  }
+  
+#head h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+.container nav ul{
+    list-style: none;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}  
+.required {
+    color: red;
+    font-weight: bold;
+  }
+  #notification {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+table{
+  width: 60%;
+  margin: 30px auto;
+}    
+th, td {
+  
+
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+

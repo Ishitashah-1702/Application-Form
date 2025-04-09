@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>  
+  <link rel="stylesheet" href="style.css">  
+  <script src="script.js"></script>
+
+  <style>
+     body{
+        background-color: white;
+        color: black;
+     }
+     .dark-mode{
+        background-color: black;
+        color: white;
+     }
+     .toogle-btn{
+        padding: 10px 20px;
+        cursor: pointer;
+     }
+  </style>
+</head>    
+<body>
+    <button class="toogle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    <section id="head">
+        <h1> Application Form</h1>
+    </section>
+
+      <section>
+        <div class="container">
+            
+        <nav>
+            <ul>
+                <li><a href="www.google.com">Home</a></li>
+                <li><a href="www.google.com">About</a></li>
+                <li><a href="www.google.com">Contact</a></li>
+                <li><a href="www.google.com">Chat Box</a></li>
+    
+            </ul>
+        </nav>
+           
+        </div>
+        <form id="myForm" onsubmit="submitForm(event)">
+            <fieldset >
+                 <legend> Application Form</legend>
+
+                 <label for="name">Name <span class="required">*</span></label>
+                 <input type="text" id="name">
+
+            <br/>
+            <br/>
+
+                 <label for="phoneno">Phone Number</label>
+                 <input type="tel" id="phoneno" maxlength="10" pattern="[0-9]{10}"placeholder="Enter 10 digit number">
+
+            <br/>
+            <br/>
+            
+                <label for="Course">Course</label>
+                <select name="Course" id="Course">
+                       <option value="HTML">HTML</option>
+                       <option value="CSS">CSS</option>
+                       <option value="JAVA-SCRIPT">JAVA-SCRIPT</option>
+
+                </select>
+
+            <br/>
+            <br/>    
+
+            <label for="address">address <span class="required">*</span></label>
+                 <input type="text" id="address">
+
+                 <br/>
+                 <br/> 
+          
+
+            <button>SUBMIT</button>
+
+            
+            </fieldset>
+        </form>
+        <div id="notification" class="hidden">Form submitted successfully!</div>
+      </section>
+        
+ <!-- <section id="table">
+  <h2 style="text-align: left;">Student Details</h2>
+
+    
+      <table>
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th colspan="2">Name</th>
+            <th>Class</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+      
+        <tbody>
+          <tr>
+            <td>101</td>
+            <td rowspan="2">Alice</td>
+            <td>10</td>
+            <td>89</td>
+          </tr>
+          
+          <tr>
+            <td>101</td>
+            <td>Alice</td>
+            <td>10</td>
+            <td>89</td>
+          </tr>
+          
+        </tbody>
+    
+ </section> -->
+      
+</body>
+</html>
